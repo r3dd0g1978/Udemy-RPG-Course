@@ -63,7 +63,9 @@ public class Player : MonoBehaviour
     {
         //isMoving = true, if x does not = 0. Boolean values: 1 = true, 0 = false
         bool isMoving = rb.velocity.x != 0;
+        anim.SetFloat("yVelocity", rb.velocity.y);
         anim.SetBool("isMoving", isMoving);
+        anim.SetBool("isGrounded", isGrounded);
     }
 
     private void FlipController()
