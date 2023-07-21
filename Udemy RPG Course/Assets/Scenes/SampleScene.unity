@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 295129067}
   - component: {fileID: 295129068}
   - component: {fileID: 295129069}
+  - component: {fileID: 295129070}
   m_Layer: 0
   m_Name: Player_Visuals
   m_TagString: Untagged
@@ -229,6 +230,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &295129070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295129066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b6d2455d52b3e649b05f58b5b0883d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -290,7 +303,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 8
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -479,8 +492,8 @@ Transform:
   m_GameObject: {fileID: 1117498855}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.866961, y: -2.1678298, z: 0.026165588}
-  m_LocalScale: {x: 7.5815, y: 3.5623538, z: 1}
+  m_LocalPosition: {x: 7.41, y: -4.8692, z: 0.026165588}
+  m_LocalScale: {x: 7.5815, y: 6.3575554, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1059060539}
@@ -540,7 +553,7 @@ Transform:
   m_GameObject: {fileID: 1226174777}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.94, y: -0.21, z: 0}
+  m_LocalPosition: {x: -9.54, y: 0.82, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -559,12 +572,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df42f3efecfe075459414670e055831c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 8
+  moveSpeed: 7
   jumpForce: 12
   groundCheckDistance: 1.4
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
+  comboCooldown: 2
+  dashDuration: 0.25
+  dashSpeed: 25
+  dashCooldown: 1.4
 --- !u!70 &1226174783
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -724,8 +741,8 @@ Transform:
   m_GameObject: {fileID: 2104947747}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.82, y: -2.02, z: 0.026165588}
-  m_LocalScale: {x: 7.5815, y: 5.624655, z: 1}
+  m_LocalPosition: {x: -5.6709, y: -5.68, z: 0.026165588}
+  m_LocalScale: {x: 9.283546, y: 10.038041, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1059060539}
@@ -854,8 +871,8 @@ Transform:
   m_GameObject: {fileID: 2137156796}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.38696116, y: -2.99563, z: 0.026165588}
-  m_LocalScale: {x: 7.5815, y: 3.158036, z: 1}
+  m_LocalPosition: {x: 0.38696116, y: -5.9679, z: 0.026165588}
+  m_LocalScale: {x: 7.5815, y: 5.6359897, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1059060539}
